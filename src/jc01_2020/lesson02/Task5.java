@@ -13,11 +13,18 @@ package jc01_2020.lesson02;
  *
  */
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Task5 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		int year = scanner.nextInt();
+		if (year % 4 ==0) {
+		 if ((year % 100 != 0) || (year % 400 == 0)) {
+			System.out.println("Високосный");
+		}
+	} else
+			System.out.println("Обычный");
 	}
 }

@@ -8,16 +8,31 @@ package jc01_2020.lesson02;
  * Формат вывода (ошибки недопустимы):
  * "Число 1"
  * "Число 2"
- * "Число 3"
+ * " 3"
  * "Другое число"
  *
  */
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Task1 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		int numeric = scanner.nextInt();
+		switch (numeric){
+			case 1:
+				System.out.println("Число " + numeric );
+                  break;
+			case 2:
+				System.out.println("Число " +  numeric);
+                 break;
+			case 3:
+				System.out.println("Число " + numeric);
+                 break;
+			default:
+				System.out.println("Другое число");
+		}
+
 	}
 }
