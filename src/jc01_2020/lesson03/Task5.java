@@ -11,8 +11,19 @@ package jc01_2020.lesson03;
  *
  */
 
+import java.util.Arrays;
+
 public class Task5 {
 	public static void main(String[] args) {
 
-	}
+        int i , j , s;
+        for (i=2; i < 10000; i++) {
+            s = 0;
+            for (j=1; j < i; j++)
+                if (i % j == 0)
+                    s += j;
+            if (s == i)
+                System.out.println(i);
+        }
+    }
 }

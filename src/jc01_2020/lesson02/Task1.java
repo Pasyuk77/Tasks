@@ -22,13 +22,13 @@ public class Task1 {
 		int numeric = scanner.nextInt();
 		switch (numeric){
 			case 1:
-				System.out.println("Число " + numeric );
+				System.out.println("Число 1" + numeric );
                   break;
 			case 2:
-				System.out.println("Число " +  numeric);
+				System.out.println("Число 2" +  numeric);
                  break;
 			case 3:
-				System.out.println("Число " + numeric);
+				System.out.println("Число 3" +  numeric);
                  break;
 			default:
 				System.out.println("Другое число");
